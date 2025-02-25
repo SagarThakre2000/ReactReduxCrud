@@ -10,13 +10,13 @@ function Todos() {
   const dispatch = useDispatch( )
 
 
-     // ✅ Set Edit Mode
+     //  Set Edit Mode
      const handleEditTodo = (todo) => {
       setEditId(todo.id);
       setEditText(todo.text);
     };
   
-    // ✅ Update Todo
+    //  Update Todo
     const handleUpdateTodo = () => {
       console.log("hello");
       
@@ -74,7 +74,7 @@ function Todos() {
             key={todo.id}
           >
             {editId === todo.id ? (
-              // ✅ Edit Mode
+              //  Edit Mode
               <>
                 <input
                   type="text"
@@ -96,7 +96,7 @@ function Todos() {
                 </button>
               </>
             ) : (
-              // ✅ Normal Display Mode
+              //  Normal Display Mode
               <>
                 <div className="text-white">{todo.text}</div>
                 <div className="flex gap-2">
